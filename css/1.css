@@ -57,7 +57,7 @@ body{
     margin-left: 50px;
   }
 
-.nav-item-hover{
+.nav-item:hover{
   text-shadow: 5px 5px 10px #FF3300, 1px 1px 1px #00CC00;
 }
 
