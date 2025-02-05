@@ -1,0 +1,143 @@
+
+
+@font-face {
+  font-family: 'Brusher Bold';
+  src: url('../font/Brusher Bold.otf');
+}
+
+@font-face {
+  font-family: 'Rupster Script Free Regular';
+  src: url('../font/Rupster Script Free Regular.ttf');
+}
+
+body{
+  min-height: 100vh;
+  background: black;
+
+}
+/*Общий контейнер*/
+ .container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+ }
+
+ /*Шапка*/
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /*логотип*/
+  .logo{
+    background: url("../img/1.webp");
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+    box-shadow: inset 2px 2px 5px rgba(154,147,140,0.5), 1px 1px 5px rgba(255,255,255,1);
+  }
+
+  /*Меню*/
+  .nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color:darkturquoise;
+    flex-grow: 1;
+    font-size: calc(0.5rem + 1vw);
+  }
+
+  .nav-item{
+    font-family: 'Rupster Script Free Regular';
+    box-sizing: border-box;
+    padding:10px;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+
+.nav-item-hover{
+  text-shadow: 5px 5px 10px #FF3300, 1px 1px 1px #00CC00;
+}
+
+  /*второй блок*/
+  .bg-line{
+    background: url(../img/2.jpg) no-repeat transparent;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+  }
+
+
+  .head{
+    font-family: 'Brusher Bold';
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
+    letter-spacing: 2rem;
+    color: #DCDCDC;
+    font-size: calc(1.5rem + 5vw);   
+  }
+
+  /*Шахматка*/
+  .line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+  }
+
+  .img1{
+    flex:1 1 50%;
+    object-fit: scale-down;
+  }
+
+  .text1{
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+  }
+
+  .img2 {
+    flex:1 1 50%;
+    object-fit: scale-down;
+  }
+
+  .img2 img, .img1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text2{
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+  }
+
+  /*футер*/
+  footer{
+    color: floralwhite ;
+    display: flex;
+    width:  100%;
+    background-color: grey;
+  }
+
+  .footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav-item{
+    font-size: calc(0.2rem + 1vw);
+  }
+  .icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+  }
